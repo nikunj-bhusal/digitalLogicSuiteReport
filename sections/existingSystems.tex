@@ -1,17 +1,18 @@
-\clearpage
-
 \section{Existing Systems}
-
-Many tools already exist for designing, analyzing, and simulating digital logic circuits. However, most of these tools focus on graphical user interfaces (GUIs), and they often lack support for command-line interaction, which is essential for automation and working on systems without graphics. Below are some of the most commonly used tools and their limitations:
+Several tools for digital logic design are available, but they have limitations that our Digital Logic Suite aims to address. Some of those systems are listed along with their limitations below:
 
 \begin{itemize}
-    \item \textbf{Logisim:} Logisim is a popular educational tool that provides a user-friendly drag-and-drop interface for creating and simulating digital circuits. It is excellent for beginners because it allows easy construction of circuits with logic gates and flip-flops. However, it does not support command-line use, cannot parse Boolean expressions directly, and lacks features for automating analysis or generating truth tables and Karnaugh maps through scripts.
-
-    \item \textbf{Digital Works:} Digital Works allows users to build circuits with basic components like gates, flip-flops, and counters. It can perform simple simulations of circuits and show how signals change over time. But like Logisim, it is entirely GUI-based, with no command-line interface, and it does not support direct Boolean expression evaluation or advanced minimization features.
-
-    \item \textbf{Logic Friday:} Logic Friday provides tools to simplify Boolean expressions, generate truth tables, and create Karnaugh maps. It is useful for analyzing equations but is limited to a Windows environment and GUI interface. There is no CLI support, and it does not offer circuit simulation or visualization outside its own interface.
-
-    \item \textbf{Online Boolean Calculators:} Some websites provide online calculators to evaluate Boolean expressions or generate truth tables. While they can be convenient for quick tasks, they do not support advanced features like K-map minimization, simulation, or visualizing circuits. They also require internet access, which is not always available or reliable in every environment.
+    \item Logisim: Logisim is a popular tool for learning how to design and simulate digital circuits, widely used by students and educators, but it doesn't work with modern C++. It is built in Java, which makes it slow on older or less powerful computers.
+    \item Digital Works: This is a paid software that allows users to simulate basic logic gates and simple circuits. However, it lacks features like generating truth tables or simplifying Boolean expressions, which makes it less helpful for students.
+    \item Logic Friday: Logic Friday is a free tool focused on simplifying Boolean expressions. It only works on Windows (does not have a cross-platform support), has no circuit simulation, and uses an old, hard-to-use interface..
+    \item Online Boolean Calculators: Tools like CircuitVerse are web-based and allow users to design circuits and perform basic logic analysis online. However, they require a constant internet connection, can be slower than local applications, and may not offer the same performance as a C++-based tool like ours.
 \end{itemize}
-
-Despite the usefulness of these tools, there is a clear gap in the availability of a lightweight, cross-platform, command-line-based suite that combines Boolean expression parsing, truth table generation, K-map minimization, circuit simulation, and visualization. Our Digital Logic Suite aims to fill this gap by providing a single, modular CLI tool that allows users to perform all these tasks in one place, with the possibility of extending the suite in the future.
+\clearpage
+Key Improvements in Our System:
+\begin{itemize}
+    \item Our Digital Logic Suite uses SFML to create a clear and responsive graphical interface, making it easy for users to place logic gates and build circuits. Our application runs smoothly even on less powerful computers.
+    \item Our tool supports the full process of designing circuits, simulating them, generating truth tables, and simplifying Boolean expressions. This all-in-one approach makes it more useful for students.
+    \item The Digital Logic Suite works on multiple operating systems, including Windows, Linux, and macOS, ensuring that users can access it regardless of their device.
+    \item Unlike web-based tools like CircuitVerse that depend on an internet connection, our app runs entirely offline which can make it more reliable and faster for users in areas with poor internet.
+\end{itemize}
+\clearpage

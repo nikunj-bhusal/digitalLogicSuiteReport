@@ -1,17 +1,13 @@
 \section{Methodology}
 
-The development of this project will follow a careful and organized step-by-step process to ensure that each part works well and the entire system functions smoothly. The approach we will take is iterative and modular, meaning we will build the project in smaller pieces, test each piece thoroughly, and then combine them together. This method helps in identifying problems early and making improvements at every stage. The detailed plan is described below:
+This project, “Digital Logic Suite,” is a C++ application that uses the SFML graphics library and follows object-oriented programming (OOP) ideas. We made different classes with private and public members to keep the code organized and safe. We used code reusability and data abstraction to make the project better. Each object has its own functions to handle events, and these work together to create the interactive simulation.
 
-\begin{enumerate}
-    \item \textbf{Requirements Analysis and System Design:} At the beginning, we will spend time understanding the exact needs of the project. This includes identifying the features that the system must have and how they should work together. We will design the overall architecture of the system to make sure each part fits well with the others. Planning carefully at this stage will help avoid confusion and mistakes during development.
+\vspace{0.5cm}
+The Digital Logic Suite solves problems found in old digital logic simulators by giving users an easy-to-use tool made in C++ with SFML (Simple and Fast Multimedia Library). Unlike older tools that use only the command line, this simulator has a clear graphical interface. Users can see logic gates, circuit connections, and truth tables easily. By using OOP, we organized the code into classes, making it easier to reuse and maintain. Users can interact with the simulation, place components, and see how circuits work in real time. This makes it useful for learning and designing digital logic circuits.
 
-    \item \textbf{Implementation of Core Modules:} After the design is ready, we will start building the main components of the system. The first core module is the expression parser, which will take logic expressions as input and convert them into a form that the computer can process. The second core module is the truth table generator, which will create tables showing all possible input values and their corresponding outputs for a given logic expression. Building these parts carefully will form a strong foundation for the rest of the project.
+\vspace{0.5cm}
+Basic C++ graphics were not enough for our needs. To make a better and more interactive interface, we used SFML version 3.0.0. SFML gives us good graphics, works on different systems, and is easy to use for drawing, handling events, and getting input. We used VS Code as our IDE and the GCC compiler, which helped us code, compile, and debug on different platforms.
 
-    \item \textbf{Integration of Minimization and Simulation Features:} Once the core modules are working, we will add additional important features. Minimization will simplify complex logic expressions to make them easier to understand and use. Simulation will allow users to test how the logic behaves with different inputs, providing useful feedback and verification.
-
-    \item \textbf{Development of Command Line Interface (CLI) and User Documentation:} To make the tool easy to use, we will develop a command line interface that allows users to interact with the system through simple commands. Alongside this, we will create clear and straightforward documentation to guide users on how to use all features of the project effectively.
-
-    \item \textbf{Integration with Graphviz for Visualization:} Visual representation of logic diagrams is very helpful for understanding. We will integrate the system with Graphviz, a powerful tool for creating graphical diagrams. This will enable users to see the logic circuits and expressions visually, improving clarity and usability.
-
-    \item \textbf{Testing, Debugging, and Optimization:} Finally, we will thoroughly test all parts of the system to find and fix any errors or bugs. After ensuring the system works correctly, we will optimize the code and processes to improve speed, efficiency, and overall performance. This will ensure the final product is reliable and user-friendly.
-\end{enumerate}
+\vspace{0.5cm}
+Before starting, we learned SFML by reading tutorials, official documents, and online guides. We also reviewed OOP concepts to design a system that is easy to manage. SFML is used for features like making the grid layout, simulating logic gates, showing the component palette, drawing the window, and creating buttons and the visual layout of the program.
+\clearpage
