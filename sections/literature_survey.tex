@@ -1,11 +1,15 @@
 \section{Literature Survey}
 Digital logic simulators are widely used simulation models that are used in digital circuit designs to model and test logic circuits before physical implementation. Early simulators, such as Logisim (Berg, 2008), provided a graphical interface for designing combinational and sequential circuits, allowing students to interactively test logic gates and simple circuits. However, it cannot parse Boolean expressions directly, and lacks features for automating analysis or generating truth tables and Karnaugh maps through scripts.
 
+\vspace{0.30cm}
 Another digital logic simulator, Digital Work, developed by Mecanique Ltd. enables users to construct and analyze digital logic circuits through real-time simulation. It can perform simple simulations of circuits and show how signals change over time. The software allows users to design circuits using basic gates (AND, OR, NOT, etc.), flip-flops (D, JK, RS). However, it does not support direct Boolean expression evaluation or advanced minimization features.
 
+\vspace{0.30cm}
 With the rise of modern graphics libraries, several implementations have explored using frameworks like Qt, SDL, or SFML for improved user interfaces and real-time simulation. Wired Panda is an open-source digital logic simulator developed in C++ using the Qt framework. It provides a real-time, interactive environment for designing and simulating combinational and sequential digital circuits. It supports a variety of logic gates as well as flip flops.
 
+\vspace{0.30cm}
 Some websites provide online calculators to evaluate Boolean expressions or generate truth tables. While they can be convenient for quick tasks, they do not support advanced features like K-map minimization, simulation, or visualizing circuits. They also require internet access, which is not always available or reliable in every environment.
 
+\vspace{0.30cm}
 Despite the usefulness of these tools, there is a clear gap in the availability of a lightweight, cross-platform suite that combines Boolean expression parsing, truth table generation, K-map minimization, circuit simulation. Our Digital Logic Suite aims to fill this gap by providing a single, modular tool that allows users to perform all these tasks in one place, with the possibility of extending the suite in the future.
 \clearpage

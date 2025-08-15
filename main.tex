@@ -58,27 +58,18 @@
     pdfsubject={Project Proposal}
 }
 
-% --- Bibliography Style (APA) ---
-\usepackage[style=apa, backend=biber]{biblatex}
-\DeclareLanguageMapping{american}{american-apa}
-\addbibresource{references.bib}
-
-
 % --- Document ---
 \begin{document}
 
-\include{sections/titlePage}
+\include{sections/titlePage.tex}
 \clearpage
 
 \pagenumbering{roman}
 \phantomsection
-\addcontentsline{toc}{section}{Acknowledgement.tex}
+\addcontentsline{toc}{section}{Acknowledgement}
 \input{sections/acknowledgement.tex}
+\addcontentsline{toc}{section}{Abstract}
 \input{sections/abstract.tex}
-\clearpage
-
-\phantomsection
-\addcontentsline{toc}{section}{Table of Contents}
 \renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
 \clearpage
@@ -95,12 +86,8 @@
 \input{sections/problems_faced_and_solutions.tex}
 \input{sections/limitations_and_future enhancements.tex}
 \input{sections/conclusion_and_recommendations.tex}
-
-% References
-\clearpage
-\nocite{*}
-\printbibliography[title={References}]
 \addcontentsline{toc}{section}{References}
+\input{sections/references.tex}
 
 
 \end{document}
