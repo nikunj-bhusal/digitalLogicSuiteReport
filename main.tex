@@ -58,6 +58,12 @@
     pdfsubject={Project Proposal}
 }
 
+% --- Bibliography Style (APA) ---
+\usepackage[style=apa, backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{references.bib}
+
+
 % --- Document ---
 \begin{document}
 
@@ -89,5 +95,12 @@
 \input{sections/problems_faced_and_solutions.tex}
 \input{sections/limitations_and_future enhancements.tex}
 \input{sections/conclusion_and_recommendations.tex}
+
+% References
+\clearpage
+\nocite{*}
+\printbibliography[title={References}]
+\addcontentsline{toc}{section}{References}
+
 
 \end{document}
